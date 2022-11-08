@@ -2,7 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap');
-
+/* fuentes oficiales */
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -140,12 +142,12 @@ ul{
 .titleDiv p{
     font-size: 18px; 
     text-transform: uppercase; 
-    font-family: 'Cairo', sans-serif;
-    color: #7c818f; 
-    padding-bottom: 10px;
+    font-family: 'Comfortaa', cursive;
+    color: #dacac7; 
+    padding: 10px 0;
 }
 .title{
-    font-family: 'Cairo', sans-serif;
+    font-family: 'Rubik Bubbles', cursive;
     text-align: justify;
     color: #f2f1ec;
     left: 15%;
@@ -173,6 +175,7 @@ video{
 
  .homePage{
     height: 700px;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     margin-top: 30px;
@@ -182,18 +185,23 @@ video{
  }
  
  .titleDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding-bottom: 100px;
-    width: auto;
+    width: 100vw;
     padding-right: 0;
 }
 .title{
-    font-size: 28px;
+    font-size: 23px;
     letter-spacing: 11px;
 }
 
 .titleDiv p{
     letter-spacing: .2px;
     font-size: 12px;
+    color: #dacac7;
 }
 
  .video video{
@@ -206,6 +214,17 @@ video{
     padding: 125px 100px;
     text-align: center;
     background-color: #21242C;
+}
+.presentation h4{
+    color: #dacac7;
+    padding-bottom: 20px;
+    font-size: 20px;
+
+}
+
+.presentation p{
+    color: #fff;
+    font-size: 18px;
 }
 
 @media screen and (max-width: 768px){
@@ -272,7 +291,7 @@ video{
 /* ============details============= */
 .details{
     background-color: #21242C;
-    color: #7c818f;
+    color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -288,10 +307,10 @@ video{
 }
 
 .infoDetails{
-    border-bottom: 2px solid #7c818f;
-    height: 25px;
+    border-bottom: .5px solid #fff;
+    height: 40px;
     width: 270px;
-    font-size: 14px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 100;
     padding-bottom: 10px;
@@ -320,17 +339,21 @@ video{
 .place{
     display: flex;
     align-items: center;
-    padding: 50px 100px;
+    padding: 150px 100px;
     background-color: #21242C;
 
 }
 
-.place p{
-    color: #7c818f;
+.place div p{
+    color: #fff;
 }
 
 .map{
     border-radius: 20px;
+}
+
+.placeDetails{
+    padding-right: 150px;
 }
 
 @media screen and (max-width: 768px){
@@ -341,6 +364,13 @@ video{
 
     .place div{
         padding: 20px 0;
+    }
+    .placeDetails{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 0;
     }
 
     .map{

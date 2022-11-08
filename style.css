@@ -7,9 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
-
 
 a{
     text-decoration: none !important;
@@ -19,9 +17,10 @@ a{
     font-family: 'Inter', sans-serif;
 */
 
-
 nav{
     display: flex;
+    position: fixed;
+    width: 100vw;
     justify-content: space-around;
     min-height: 8vh;
     border-bottom: 2px solid #fff;
@@ -29,6 +28,7 @@ nav{
     align-items: center;
     color: #fff;
     background-color: #21242C;
+    z-index: 100;
 }
 .logo{
     font-size: 20px;
@@ -86,7 +86,7 @@ ul{
     .nav-links{
         position: absolute;
         right: 0px;
-        height: 92vh;
+        height: 30vh;
         top: 8vh;
         background-color: #21242C;
         display: flex;
@@ -127,22 +127,31 @@ ul{
 
 .homePage{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    padding: 100px 20px;
+    padding: 200px 70px 0 70px;
     background-color: #21242C;
 }
+.titleDiv{
+    width: 400px;
+    padding-right: 100px;
+}
 
-
-
+.titleDiv p{
+    font-size: 18px; 
+    text-transform: uppercase; 
+    font-family: 'Cairo', sans-serif;
+    color: #7c818f; 
+    padding-bottom: 10px;
+}
 .title{
     font-family: 'Cairo', sans-serif;
-    text-align: center;
+    text-align: justify;
     color: #f2f1ec;
     left: 15%;
-    letter-spacing: 10px;
+    letter-spacing: 22px;
     text-transform: uppercase;
-    font-size: 28px;
+    font-size: 70px;
 }
 .button{
     background-color: #e46037;
@@ -152,10 +161,8 @@ ul{
     text-align: center;
 }
 
-
-.video{
-    height: 450px;
-    width: auto;
+.vid{
+    width: 600px;
 }
 
 video{
@@ -165,19 +172,28 @@ video{
 @media screen and (max-width: 768px){
 
  .homePage{
-    height: 500px;
+    height: 700px;
     display: flex;
     flex-direction: column;
+    margin-top: 30px;
     align-items: center;
-    padding-top: 110px;
+    padding-bottom: 200px;
+    
  }
  
  .titleDiv{
-    padding-bottom: 50px;
+    padding-bottom: 100px;
+    width: auto;
+    padding-right: 0;
+}
+.title{
+    font-size: 28px;
+    letter-spacing: 11px;
 }
 
 .titleDiv p{
     letter-spacing: .2px;
+    font-size: 12px;
 }
 
  .video video{
@@ -187,7 +203,7 @@ video{
 }
 
 .presentation{
-    padding: 50px 100px;
+    padding: 125px 100px;
     text-align: center;
     background-color: #21242C;
 }
@@ -223,10 +239,33 @@ video{
 .imagCarousel{
     height: auto !important;
 }
+.carousel-item img{
+    width: 800px !important;
+    height: 800px !important;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.carousel-item video{
+    width: 800px !important;
+    height: 800px !important;
+    border-radius: 20px;
+}
 
 @media screen and (max-width: 768px){
     .carouselSize{
         width: 350px !important;
+    }
+    .carousel-item img{
+        width: 375px !important;
+        height: 375px !important;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    .carousel-item video{
+        width: 375px !important;
+        height: 375px !important;
+        border-radius: 20px;
     }
 }
 
@@ -237,12 +276,14 @@ video{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 100px 150px;
-    height: 400px;
+    padding: 50px 230px;
+    height: 500px;
 }
 
 .imgDetails{
-    height: 350px;
+    height: 450px;
+    width: auto;
+    object-fit: cover;
     border-radius: 20px;
 }
 
@@ -260,13 +301,14 @@ video{
     .details{
         display: flex;
         flex-direction: column;
-        height: 700px;
-        padding-bottom: 200px;
+        height: 600px;
+        padding: 50px 190px;
     }
 
     .imgDetails{
-        width: 350px;
-        height: auto;
+        height: 300px;
+        width: auto;
+        object-fit: cover;
     }
 
     .details div{
@@ -280,7 +322,7 @@ video{
     align-items: center;
     padding: 50px 100px;
     background-color: #21242C;
-    padding: 0;
+
 }
 
 .place p{
@@ -307,7 +349,6 @@ video{
 }
 
 /* Form */
-
 .myform{
     height: 150px;
     display: flex;
